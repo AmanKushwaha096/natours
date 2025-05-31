@@ -49,17 +49,17 @@ if(logOutBtn) logOutBtn.addEventListener('click',logout)
 if(userDataForm) {
     userDataForm.addEventListener('submit',e=>{
         e.preventDefault();
-        console.log("hello");
+        // console.log("hello");
         const form = new FormData();
         form.append('name', document.getElementById('name').value)
         form.append('email', document.getElementById('emailInput').value)
         form.append('photo',document.getElementById('photo').files[0])
 
-        console.log(form);
+        // console.log(form);
         updateSettings(form,'data')
     })
 }
-console.log(userPasswordForm);
+// console.log(userPasswordForm);
 if (userPasswordForm) {
     userPasswordForm.addEventListener('submit', async e => {
         e.preventDefault();
@@ -80,7 +80,7 @@ if(bookBtn){
     bookBtn.addEventListener('click',e=>{
         e.target.textContent = 'Processing'
         const {tourId} = e.target.dataset;
-        console.log(tourId);
+        // console.log(tourId);
         bookTour(tourId)
     })
 }

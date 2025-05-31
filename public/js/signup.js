@@ -14,7 +14,7 @@ export const signup = async (name, email, pwd, pwdCnfrm) => {
                 location.assign('/')
             }, 1500)
         }
-        console.log(res);
+        // console.log(res);
     }
     catch (err) {
         showAlert('error', err.response.data.message)

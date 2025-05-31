@@ -41,7 +41,7 @@ exports.signup = catchAsync(async (req, res, next) => {
         role: req.body.role
     })
     const url = `${req.protocol}://${req.get('host')}/me`
-    console.log(url);
+    // console.log(url);
     await new Email(newUser,url).sendWelcome()
     createSendToken(newUser, 201, res);
 
@@ -51,7 +51,7 @@ const bcrypt = require('bcryptjs')
 exports.login = catchAsync(async (req, res, next) => {
 
     const { email, pwd } = req.body;
-    console.log(email, pwd);
+    // console.log(email, pwd);
     // check email and pwd exist 
     if (!email || !pwd) {
         return next(new AppError('Please provide email and password !', 400))
@@ -70,7 +70,7 @@ exports.login = catchAsync(async (req, res, next) => {
 })
 
 exports.logout = (req,res) =>{
-    console.log("hrllo");
+    // console.log("hrllo");
     res.cookie('jwt','loggedout',{
         expires : new Date(Date.now() + 10 * 1000),
         httpOnly : true
@@ -99,7 +99,7 @@ exports.protect = catchAsync(async (req, res, next) => {
     // verification token
 
     const decoded = await promisify(jwt.verify)(token, process.env.JWT_SECRET)
-    console.log(decoded);
+    // console.log(decoded);
 
     // check if user still exists
     const currentUser = await User.findById(decoded.id);
@@ -115,7 +115,7 @@ exports.protect = catchAsync(async (req, res, next) => {
     // Grant access
     req.user = currentUser;
     res.locals.user = currentUser
-    console.log(currentUser);
+    // console.log(currentUser);
 
     next();
 })
@@ -196,7 +196,7 @@ exports.updatePassword = catchAsync(async (req, res, next) => {
 
 
     // 2) Check if POSTed current password is correct
-    console.log(req.body.pwdCurrent);
+    // console.log(req.body.pwdCurrent);
     if (!(await user.correctPassword(req.body.pwdCurrent, user.pwd))) {
 
         return next(new AppError('Your current password is wrong.', 401));

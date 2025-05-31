@@ -7,6 +7,7 @@ const mongoSanitize = require('express-mongo-sanitize')
 const xss = require('xss-clean')
 const hpp = require('hpp')
 const cookieParser = require('cookie-parser')
+const compression = require('compression')
 
 // Start express app
 const app = new express();
@@ -62,6 +63,7 @@ app.use(
 );
 
 
+app.use(compression())
 
 app.set('view engine', 'pug')
 app.set('views', path.join(__dirname, 'views'))
@@ -155,7 +157,7 @@ app.use(hpp({
 
 app.use((req, res, next) => {
   req.requestTime = new Date().toISOString();
-  // console.log(req.cookies );
+
   next();
 })
 

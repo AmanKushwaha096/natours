@@ -15,7 +15,7 @@ mongoose.connect(db, {
     useNewUrlParser: true,
     useUnifiedTopology: true
 }).then((con) => {
-    console.log('Connection successfull');
+    // console.log('Connection successfull');
 });
 
 // Reading file
@@ -29,10 +29,10 @@ const importData = async () => {
         await Review.create(reviews);
         // await Tour.create(tours);
         // await User.create(users, {validateBeforeSave : false});
-        console.log('Data successfully loaded');
+        // console.log('Data successfully loaded');
     }
     catch(err) {
-        console.log(err);
+        // console.log(err);
     }
 }
 
@@ -41,10 +41,10 @@ const deleteData = async () => {
         // await Tour.deleteMany();
         // await User.deleteMany();
         await Review.deleteMany();
-        console.log('Data successfully deleted');
+        // console.log('Data successfully deleted');
     }
     catch(err) {
-        console.log(err);
+        // console.log(err);
     }
     process.exit();
 }
@@ -55,4 +55,4 @@ else if (process.argv[2] === '--delete') {
     deleteData();
 }
 
-console.log(process.argv);
+// console.log(process.argv);

@@ -57,8 +57,7 @@ exports.getMe = (req,res,next) => {
 
 
 exports.updateMe = catchAsync(async (req,res,next) =>{
-    console.log(req.file);
-    console.log(req.body);
+   
     // Create error if user post password data
     if(req.body.pwd || req.body.pwdCnfrm) {
         return next(new AppError('This route is not for pwd upodates . Please use /updatePassword ',404))
