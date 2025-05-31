@@ -8,6 +8,7 @@ const xss = require('xss-clean')
 const hpp = require('hpp')
 const cookieParser = require('cookie-parser')
 
+// Start express app
 const app = new express();
 app.use(express.json({ limit: '10kb' }));
 
