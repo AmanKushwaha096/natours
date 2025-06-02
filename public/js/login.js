@@ -15,7 +15,7 @@ export const login = async (email, pwd) => {
         if(res.data.status === 'success'){
             showAlert('success','Logged in successfully',)
             window.setTimeout(()=>{
-                location.assign('/https://natours-5fkg.onrender.com')                
+                location.assign('/')                
             },1500)
         }
         // console.log(res);

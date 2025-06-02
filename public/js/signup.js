@@ -11,7 +11,7 @@ export const signup = async (name, email, pwd, pwdCnfrm) => {
         if (res.data.status === 'success') {
             showAlert('success', 'Account created succesfully')
             window.setTimeout(() => {
-                location.assign('/https://natours-5fkg.onrender.com')
+                location.assign('/')
             }, 1500)
         }
         // console.log(res);
