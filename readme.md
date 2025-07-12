@@ -34,15 +34,15 @@ What I Learned
 - Using Postman to test and debug API flows efficiently
 
 If you want to run this project locally:  
-1.Clone the repo:   
+1. Clone the repo:   
  git clone https://github.com/AmanKushwaha096/natours  
-2.Install dependencies:  
+2. Install dependencies:  
  cd natours  
  npm install  
-3.Create your environment config file:  
+3. Create your environment config file:  
  Copy .env.example and rename it to .env  
  Add your MongoDB URI, JWT secrets, and other keys  
-4.Run the development server:  
+4. Run the development server:  
  npm run dev  
 
 GitHub: https://github.com/AmanKushwaha096/natours
