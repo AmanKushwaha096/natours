@@ -33,7 +33,7 @@ What I Learned
 - Connecting MongoDB with Mongoose and designing schemas  
 - Using Postman to test and debug API flows efficiently
 
-If you want to run this project locally:
+If you want to run this project locally:  
 1.Clone the repo:   
  git clone https://github.com/AmanKushwaha096/natours  
 2.Install dependencies:  
