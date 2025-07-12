@@ -1,7 +1,7 @@
 Natours – A Tour Booking Backend API
-Hey there!
-This is a Node.js API project I built while learning backend development.
-It’s a backend system for a tour booking platform — something like a simplified version of what a travel site might use.
+  Hey there!
+    This is a Node.js API project I built while learning backend development.
+    It’s a backend system for a tour booking platform — something like a simplified version of what a travel site might use.
 
 Built With:
 - Node.js + Express  
