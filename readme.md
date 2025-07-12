@@ -34,7 +34,7 @@ What I Learned
 - Using Postman to test and debug API flows efficiently
 
 If you want to run this project locally:
-1. Clone the repo:  
+1.Clone the repo:   
  git clone https://github.com/AmanKushwaha096/natours  
 2.Install dependencies:  
  cd natours  
