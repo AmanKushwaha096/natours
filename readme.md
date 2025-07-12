@@ -10,6 +10,7 @@ Built With:
   REST API with MVC Pattern
   Postman for Testing
   Deployment (Render)
+  Pugs
 
 Features:
   Signup / login / protect routes
@@ -43,7 +44,6 @@ If you want to run this project locally:
  Add your MongoDB URI, JWT secrets, and other keys
 4.Run the development server:
  npm run dev
-
 
 GitHub: https://github.com/AmanKushwaha096/natours
 
