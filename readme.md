@@ -35,7 +35,7 @@ What I Learned
 
 If you want to run this project locally:  
 1. Clone the repo:   
- git clone https://github.com/AmanKushwaha096/natours  
+ git clone https://github.com/amankushwahacodes/natours  
 2. Install dependencies:  
  cd natours  
  npm install  
@@ -45,7 +45,7 @@ If you want to run this project locally:
 4. Run the development server:  
  npm run dev  
 
-GitHub: https://github.com/AmanKushwaha096/natours
+GitHub: https://github.com/amankushwahacodes/natours
 
 Live: https://natours-5fkg.onrender.com
 
